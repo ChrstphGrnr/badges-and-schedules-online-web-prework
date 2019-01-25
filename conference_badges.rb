@@ -15,4 +15,5 @@ def printer(attendees)
   while print_badge_times > 0 
     batch_badge_creator(attendees).pop
     print_badge_times -= 1 
+  end
 end
