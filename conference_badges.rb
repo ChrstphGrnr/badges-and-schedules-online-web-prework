@@ -12,5 +12,5 @@ end
   
 def printer(attendees)
   print_badge_times = (0..(batch_badge_creator(attendees).length-1).to_a 
-  print_badge_times.map {|x| puts "#{batch_badge_creator(0)}"}
+  print_badge_times.map {|x| puts {batch_badge_creator(x)}
 end
