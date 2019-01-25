@@ -11,5 +11,6 @@ def assign_rooms(speakers)
 end
   
 def printer(attendees)
-  batch_badge_creator(attendees).each
+  print_badge_times = (1..batch_badge_creator(attendees).length+1).to_a 
+  print_badge_times.each {|x| puts batch_badge_creator[x]}
 end
