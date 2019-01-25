@@ -11,9 +11,6 @@ def assign_rooms(speakers)
 end
   
 def printer(attendees)
-  print_badge_times = batch_badge_creator(attendees).length
-  while print_badge_times > 0 
-    puts batch_badge_creator(attendees)
-    print_badge_times -= 1 
+  batch_badge_creator(attendees).each {|x| puts x}
   end
 end
